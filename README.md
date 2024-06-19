@@ -1,3 +1,3 @@
 # Pydot Graph
 
-A graph notation for creating Graphviz visualizations using pydot.
+A graph notation for creating Graphviz visualizations using Pydot.
