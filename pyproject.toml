@@ -24,5 +24,5 @@ dependencies = [
 path = "src/pydot_graph/__about__.py"
 
 [project.urls]
-"Homepage" = "https://github.com/pypa/sampleproject"
-"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+"Homepage" = "https://github.com/faranalytics/pydot_graph"
+"Bug Tracker" = "https://github.com/faranalytics/pydot_graph/issues"
