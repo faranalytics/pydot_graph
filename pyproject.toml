@@ -8,7 +8,7 @@ dynamic = ["version"]
 authors = [
   { name="Adam Patterson", email="adpatter@umich.edu" },
 ]
-description = "A Graph notation for creating Graphviz visualizations using pydot."
+description = "A graph notation for creating Graphviz visualizations using pydot."
 readme = "README.md"
 requires-python = ">=3.10"
 classifiers = [
