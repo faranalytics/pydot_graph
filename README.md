@@ -16,7 +16,7 @@ In order to understand the Pydot Graph representation, you can visually map the 
 
 0. Import the dependencies.
 1. Construct the graph using a list of lists.<br>
-   a. Contruct a set of nodes that will have multiple references.<br>
+   a. Construct a set of nodes that will have multiple references.<br>
    b. Construct the main graph.<br>
 2. Create an instance of PydotGraph.
 3. Build the graph.
