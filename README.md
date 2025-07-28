@@ -1,25 +1,27 @@
 # Pydot Graph
 
-A graph notation for creating Graphviz visualizations using Pydot.  
+A graph notation for creating [Graphviz](https://www.graphviz.org/) visualizations using [Pydot](https://github.com/pydot/pydot).
 
 ## Introduction
 
-Pydot Graph makes it a little easier to construct graphs using Pydot.  You can, for example, use Pydot Graph to construct a graph programmatically at each step of a pipeline.
+Pydot Graph makes it a little easier to construct graphs using Pydot. You can, for example, use Pydot Graph to construct a graph programmatically at each step of a pipeline.
 
 ## Example
 
-### Instructions
+In this example a hypothetical graph is constructed using Pydot Graph. Pydot Graph represents the [graph](#output) as a list of lists. In order to understand the Pydot Graph representation, you can visually map the labels in the [graph image](#output) to the labels in the Python [list of Pydot nodes](#implementation).
 
-In this example a hypothetical graph is constructed using Pydot Graph.  You can map the labels in the [Output](#output) image to each node in the list.
+### Instructions
 
 0. Import the dependencies.
 1. Construct the graph using a list of lists.<br>
-  a. Contruct a set of nodes that will have multiple references.<br>
-  b. Construct the main graph.<br>
+   a. Contruct a set of nodes that will have multiple references.<br>
+   b. Construct the main graph.<br>
 2. Create an instance of PydotGraph.
 3. Build the graph.
 4. Write the graph to a file.
 5. Display the image.
+
+### Implementation
 
 ```python
 # 0. Import the dependencies.
@@ -95,4 +97,5 @@ Image(graph.create_png())
 ```
 
 #### Output
+
 <img src="./output.png"/>
