@@ -9,9 +9,9 @@ A graph notation for creating Graphviz visualizations using Pydot.
 In this example a hypothetical graph is constructed using `PydotGraph`.  You can map the labels in the [Output](#output) image to each node in the list.
 
 0. Import the dependencies.
-1. Construct the graph using a list of lists.
-  - 1a. Contruct a set of nodes that will have multiple references.
-  - 1b. Construct the main graph.
+1. Construct the graph using a list of lists.<br>
+  a. Contruct a set of nodes that will have multiple references.<br>
+  b. Construct the main graph.<br>
 2. Create an instance of PydotGraph.
 3. Build the graph.
 4. Write the graph to a file.
