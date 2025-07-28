@@ -100,4 +100,4 @@ Image(graph.create_png())
 
 #### Output
 
-<img src="https://github.com/faranalytics/pydot_graph/edit/main/output.png"/>
+<img src="https://raw.githubusercontent.com/faranalytics/pydot_graph/refs/heads/main/output.png"/>
