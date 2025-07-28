@@ -4,7 +4,7 @@ A graph notation for creating Graphviz visualizations using Pydot.
 
 ## Introduction
 
-Pydot Graph makes it a little easier to construct graphs using Pydot.  You can, for example, use Pydot Graph to construct a graph programatically at each step of a pipeline.
+Pydot Graph makes it a little easier to construct graphs using Pydot.  You can, for example, use Pydot Graph to construct a graph programmatically at each step of a pipeline.
 
 ## Example
 
