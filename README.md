@@ -6,7 +6,19 @@ A graph notation for creating Graphviz visualizations using Pydot.
 
 ### Instructions
 
+In this example a hypothetical graph is constructed using `PydotGraph`.  You can map the labels in the [Output](#output) image to each node in the list.
+
+0. Import the dependencies.
+1. Construct the graph using a list of lists.
+  - 1a. Contruct a set of nodes that will have multiple references.
+  - 1b. Construct the main graph.
+2. Create an instance of PydotGraph.
+3. Build the graph.
+4. Write the graph to a file.
+5. Display the image.
+
 ```python
+# 0. Import the dependencies.
 from pydot_graph import PydotGraph
 import random
 import pydot
@@ -16,16 +28,16 @@ from IPython.display import Image, display
 def random_color():
     return "#" + hex(random.randint(0, 0xFFFFFF))[2:].rjust(6, "0")
 
-# Construct the graph using a list of lists.
+# 1. Construct the graph using a list of lists.
 
-## Contruct a set of nodes that will have multiple references.
+## 1a. Contruct a set of nodes that will have multiple references.
 nodes = [
     pydot.Node(label=f"Node Label 5a.\nn={100}", fillcolor=random_color()),
     pydot.Edge(label="Edge 9."),
     pydot.Node(label=f"Node Label 6a.\nn={100}", fillcolor=random_color()),
 ]
 
-## Construct the main graph.
+## 1b. Construct the main graph.
 pydot_graph = [
     pydot.Dot(graph_type="digraph", rankdir="TB"),
     pydot.Node(label=f"Node Label 1.\nn={100}", fillcolor=random_color()),
@@ -62,19 +74,19 @@ pydot_graph = [
     nodes,
 ]
 
-# Create an instance of PydotGraph.
+# 2. Create an instance of PydotGraph.
 pydotGraph = PydotGraph(
     node_defaults={"shape": "box", "fontname": "Sans", "style": "filled", "fillcolor": "#eeeeee"},
     edge_defaults={"fontname": "Sans"},
 )
 
-# Build the graph.
+# 3. Build the graph.
 graph = pydotGraph.build(pydot_graph)
 
-# Write the graph to a file.
+# 4. Write the graph to a file.
 graph.write_png("output.png")
 
-# Display the image.
+# 5. Display the image.
 Image(graph.create_png())
 ```
 
